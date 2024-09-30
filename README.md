@@ -1,4 +1,4 @@
-*El archivo application.properties especifica lo siguiente:
+* El archivo application.properties especifica lo siguiente:
 
 server.port=8080
 spring.jpa.hibernate.ddl-auto=update
@@ -8,7 +8,7 @@ spring.datasource.password=yms_clave
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
 
-*Por lo que para hacer correr el aplicativo se requiere configurar el Docker para Mysql:
+* Por lo que para hacer correr el aplicativo se requiere configurar el Docker para Mysql:
 
 docker-compose.yml:
 version: '3.1'
@@ -26,7 +26,7 @@ services:
     ports:
       - "3306:3306"
 
-*Después de esto, se inicia Mysql con el siguiente comando:
+* Después de esto, se inicia Mysql con el siguiente comando:
 docker-compose up -d
 
 * Debido a que es un Spring Boot con gradle, se ejecuta el siguiente comando para que se corra el aplicativo en el localhost:8080:
