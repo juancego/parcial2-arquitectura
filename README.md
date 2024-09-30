@@ -26,6 +26,12 @@ services:
     ports:
       - "3306:3306"
 
+* Para la imagen de docker se usa el siguente comando:
+docker build -t imagen_parcial
+
+docker run -p 8080:8080 imagen_parcial
+
+
 * Después de esto, se inicia Mysql con el siguiente comando:
 docker-compose up -d
 
